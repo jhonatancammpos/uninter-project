@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade extensionista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/" class="logo-container">
+                        <img class="logoAtividade" src="./assets/Rectangle-22.png" />
+                        <span>PROJETO TRABALHO</span>
+                    </a>
+                </li>
+                <li class="menu-links">
+                    <a href="/">CÁLCULO</a>
+                    <a href="/howItWorks.html">COMO FUNCIONA?</a>
+                    <a href="/about.html">SOBRE</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="mainContent">
+            <div class="description">
+                <div class="textMainContent">
+                <h1 class="mainTitle"><span>Quanto você está <br /> gastando?</span></h1>
+                <p class="mainTextCalc">
+                    Aqui você consegue acompanhar o quanto<br />
+                    você gasta por dia com um determinado aparelho,<br />
+                    onde existe desperdício e dicas para economizar.
+                </p>
+            </div>
+            <div class="mainImage">
+                <img src="./assets/pay_16126459 1.png" />
+            </div>
+            </div>
+            <div class="calcEnergy">
+                <form>
+                    <div class="selectItens">
+                        <label>ELETRODOMÉSTICO:</label>
+                        <select class="ItensToSelect">
+                            <option>Escolha...</option>
+                            <option>Geladeira</option>
+                            <option>TV</option>
+                            <option>Computador</option>
+                            <option>Microondas</option>
+                            <option>Chaveiro elétrico</option>
+                        </select>
+                    </div>
+                    <div class="inpUseHours">
+                        <label for="useHours">QUANTO TEMPO POR DIA É UTILIZADO?</label>
+                        <input type="text" id="useHours">
+                    </div>
+                    <div class="inpKW">
+                        <label for="KW">VALOR DO kWh</label>
+                        <input type="text" id="KW">
+                    </div>
+                    <button>CALCULAR</button>
+                </form>
+                <div class="i">
+                    <div class="progressBar">
+                        <div class="grid-cell">
+                        <span>Consumo por dia</span>
+                        <span>7.8 kWh</span>
+                    </div>
+                    </div>
+                    
+                    <!-- <div class="progressBarFill">
+                        Progress Bar
+                    </div>
+                    <div class="grid-cell">
+                        <span>Meta de consumo</span>
+                        <span>6.0 kWh</span> -->
+                        <div class="tips">
+                        <a href="#">
+                            DICAS
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>
