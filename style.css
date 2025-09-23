@@ -112,7 +112,9 @@ label {
     font-weight: bold;
     margin-bottom: .5rem;
 }
-
+.calcButton{
+    font-weight: bold;
+}
 .ItensToSelect, #useHours, #KW, button {
     width: 100%;
     background-color: #127369;
