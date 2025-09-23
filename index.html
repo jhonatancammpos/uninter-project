@@ -44,12 +44,12 @@
                     <div class="selectItens">
                         <label>ELETRODOMÉSTICO:</label>
                         <select class="ItensToSelect">
-                            <option>Escolha...</option>
-                            <option>Geladeira</option>
-                            <option>TV</option>
-                            <option>Computador</option>
-                            <option>Microondas</option>
-                            <option>Chaveiro elétrico</option>
+                            <option value="empty">Escolha...</option>
+                            <option value="geladeira">Geladeira</option>
+                            <option value="tv">TV</option>
+                            <option value="computer">Computador</option>
+                            <option value="microondas">Microondas</option>
+                            <option value="chuveiro">Chuveiro elétrico</option>
                         </select>
                     </div>
                     <div class="inpUseHours">
@@ -60,14 +60,18 @@
                         <label for="KW">VALOR DO kWh</label>
                         <input type="text" id="KW">
                     </div>
-                    <button>CALCULAR</button>
+                    <button class="calcButton">CALCULAR</button>
                 </form>
                 <div class="i">
                     <div class="progressBar">
                         <div class="grid-cell">
-                        <span>Consumo por dia</span>
-                        <span>7.8 kWh</span>
-                    </div>
+                            <span>Consumo por dia</span>
+                            <span class="dayKWH">R$ 0,00</span>
+                        </div>
+                        <div class="grid-cell-month">
+                            <span>Consumo por mês</span>
+                            <span class="monthKWH">R$ 0,00</span>
+                        </div>
                     </div>
                     
                     <!-- <div class="progressBarFill">
@@ -75,7 +79,7 @@
                     </div>
                     <div class="grid-cell">
                         <span>Meta de consumo</span>
-                        <span>6.0 kWh</span> -->
+                        <span>6.0 kWh</span> --> 
                         <div class="tips">
                         <a href="#">
                             DICAS
@@ -83,9 +87,9 @@
                     </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </main>
+    <script src="config.js"></script>
 </body>
 </html>

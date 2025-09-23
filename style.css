@@ -23,6 +23,9 @@ header {
     color: #FFFFFF;
     font-weight: 550;
 }
+button {
+    cursor: pointer;
+}
 a {
     text-decoration: none;
     color: #FFFFFF;
@@ -142,6 +145,13 @@ label {
     justify-content: space-between;
     width: 100%;
 }
+.grid-cell-month{
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
 /* .progressBarFill {
     grid-column: 1 / span 2;
     position: relative;
@@ -159,6 +169,7 @@ label {
     padding: .5rem 2rem;
     border-radius: 1rem;
     border: 1px solid #ffffff39;
-    margin-bottom: 2rem;;
+    margin-bottom: 2rem;
+    cursor: pointer;
     text-align: center;
 }
