@@ -19,7 +19,7 @@ span {
 }
 header {
     background-color: #127369;
-    padding: 1rem 2rem;
+    padding: 1rem;
     color: #FFFFFF;
     font-weight: 550;
 }
@@ -46,58 +46,67 @@ nav ul {
 }
 .menu-links {
     display: flex;
-    gap: 65px; 
-    margin-right: 4rem;
+    gap: 10px;
 }
 
-.description{
+.description, .calcEnergy{
     display: flex;
+    flex-direction: column;
 }
 .textMainContent{
-    padding: 4rem 3rem;
-    width: 65%;
+    padding: 2rem 1rem;
+    width: 100%;
 }
 .mainTitle {
-    margin-bottom: 2.5rem;
-    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
-.mainText{
-    width: 70%;
-    font-size: 2.25rem;
+.mainText, .mainTextAbout, .mainTextCalc{
+    width: 100%;
+    font-size: 1.25rem;
 }
 .mainTextAbout {
-    font-size: 2.25rem;
     margin-bottom: 1rem;
 }
-.mainTextCalc{
+/* .mainTextCalc{
     width: 95%;
     font-size: 2.25rem;
-}
+} */
 .mainImage{
-    padding: 4rem 3rem;
-    margin-right: 6rem;
+    padding: 0 1rem 2rem 1rem;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
 }
+
+.mainImage img {
+    max-width: 100%;
+    height: auto;
+}
+
 .helpUsers {
     display: flex;
     flex-direction: column;
-    padding: 0 3rem ;
+    padding: 0 1rem ;
 }
 .helpUsersSteps {
     text-transform: uppercase;
 }
-.calcEnergy {
+/* .calcEnergy {
     display: flex;
     margin-bottom: 2rem;
-}
+} */
 form {
-    width: 45%;
-    margin-left: 3rem;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
 }
 .selectItens, .inpUseHours, .inpKW{
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 label {
     font-weight: bold;
@@ -105,11 +114,11 @@ label {
 }
 
 .ItensToSelect, #useHours, #KW, button {
-    width: 18rem;
+    width: 100%;
     background-color: #127369;
     color: #FFFFFF;
     font-size: 1rem;
-    padding: .5rem;
+    padding: .8rem;
     border-radius: 1rem;
     outline: none;
     border: 1px solid #ffffff39;
@@ -119,49 +128,47 @@ label {
     font-weight: bold;
 }
 .progressBar{
-    width: 30rem;
+    width: auto;
     background-color: #127369;
     color: #FFFFFF;
     font-weight: bold;
     font-size: .9rem;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1rem;
     border-radius: 1rem;
     border: 1px solid #ffffff39;
-    margin-bottom: 2rem;;
+    
+    margin: 0 1rem 2rem 1rem;
 }
 .helpUsersSection {
-    width: 70%;
+    width: auto;
+    margin: 1rem;
     background-color: #127369;
     color: #FFFFFF;
     font-size: 1rem;
     padding: 1rem 2rem;
     border-radius: 1rem;
     border: 1px solid #ffffff39;
-    margin: 1rem 0;
 }
-.grid-cell{
+.grid-cell, .grid-cell-month{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
-.grid-cell-month{
+.grid-cell-month {
     margin-top: .5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
 }
 /* .progressBarFill {
     grid-column: 1 / span 2;
     position: relative;
 } */
 
-.test {
+/* .test {
     display: flex;
-}
+} */
 .tips{
-    width: 10rem;
+    width: auto;
+    margin: 0 1rem 2rem 1rem;
     background-color: #127369;
     color: #FFFFFF;
     font-weight: bold;
@@ -169,7 +176,72 @@ label {
     padding: .5rem 2rem;
     border-radius: 1rem;
     border: 1px solid #ffffff39;
-    margin-bottom: 2rem;
     cursor: pointer;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 1rem 2rem;
+    
+    }
+    .menu-links {
+        gap: 65px; 
+        margin-right: 4rem;
+    }
+    
+    .description, .calcEnergy {
+        flex-direction: row; 
+        align-items: center;
+    }
+
+    .textMainContent {
+        padding: 4rem 3rem;
+        width: 65%; 
+    }
+
+    .mainTitle {
+        font-size: 3rem; 
+    }
+
+    .mainText, .mainTextAbout, .mainTextCalc {
+        font-size: 2.25rem; 
+    }
+
+    .mainText {
+        width: 70%;
+    }
+
+    .mainTextCalc {
+        width: 95%;
+    }
+
+    .mainImage {
+        padding: 4rem 3rem;
+        margin-right: 6rem;
+    }
+    
+    .helpUsers {
+        padding: 0 3rem;
+    }
+
+    form {
+        width: 45%; 
+        margin-left: 3rem;
+        padding: 0;
+    }
+
+    .ItensToSelect, #useHours, #KW, button {
+        width: 18rem; 
+    }
+
+    .progressBar {
+        width: 30rem; 
+        margin-top: 0;
+    }
+
+    .tips {
+        width: 10rem;
+        margin: 0 0 2rem 0;
+    }
 }
