@@ -4,6 +4,7 @@ let kw = document.getElementById("KW");
 let selector = document.querySelector(".ItensToSelect");
 let dayUse = document.querySelector(".dayKWH");
 let monthUse = document.querySelector(".monthKWH");
+let tipsText = document.querySelector(".tipsText");
 
 calcButton.addEventListener("click", function(e) {
     e.preventDefault();
@@ -23,22 +24,32 @@ calcButton.addEventListener("click", function(e) {
         case "geladeira":
             dayUse.innerHTML = formatCurrencyBRL(geladeiraConsumePerDay);
             monthUse.innerHTML = formatCurrencyBRL(geladeiraConsumePerMonth);
+            tipsText.style.display = "block";
+            tipsText.innerHTML = "Não secar roupas atrás da geladeira. Além de sobrecarregar o aparelho e gerar risco de choque, isso aumenta o consumo de energia.";
             break;
         case "tv":
             dayUse.innerHTML = formatCurrencyBRL(tvConsumePerDay);
             monthUse.innerHTML = formatCurrencyBRL(tvConsumePerMonth);
+            tipsText.style.display = "block";
+            tipsText.innerHTML = "Lembrar sempre de desligar quando sair daquele cômodo mesmo que seja por um curto período de tempo.";
             break;
         case "computer":
             dayUse.innerHTML = formatCurrencyBRL(computerConsumePerDay);
             monthUse.innerHTML = formatCurrencyBRL(computerConsumePerMonth);
+            tipsText.style.display = "block";
+            tipsText.innerHTML = "Desligar o computador da tomada quando não estiver sendo utilizado.";
             break;
         case "microondas":
             dayUse.innerHTML = formatCurrencyBRL(microondasConsumePerDay);
             monthUse.innerHTML = formatCurrencyBRL(microondasConsumePerMonth);
+            tipsText.style.display = "block";
+            tipsText.innerHTML = "Preferir alimentos frescos aos congelados, que demandam mais tempo de preparo e, consequentemente, mais energia.";
             break;
         case "chuveiro":
             dayUse.innerHTML = formatCurrencyBRL(chuveiroConsumePerDay);
             monthUse.innerHTML = formatCurrencyBRL(chuveiroConsumePerMonth);
+            tipsText.style.display = "block";
+            tipsText.innerHTML = "Dar preferência aos sistemas solares para aquecimento de água - eles são mais econômicos e ainda ajudam a preservar o meio ambiente.";
             break;
         // case "empty":
         //     alert("Por favor, selecione um eletrodoméstico.");
